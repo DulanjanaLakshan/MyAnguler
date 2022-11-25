@@ -1,0 +1,26 @@
+<form>
+  <div>
+    <label>Id</label>
+    <input type="text" name="id"/>
+    <label>Title</label>
+    <input type="text" name="title"/>
+    <label>Description</label>
+    <input type="text" name="description"/>
+  </div>
+  <button type="submit" >Submit</button>
+</form>
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Title</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movie of movies">
+            <td>{{movie.Id}}</td>
+            <td>{{movie.Title}}</td>
+            <td>{{movie.Description}}</td>
+        </tr>
+    </tbody>
+</table>
